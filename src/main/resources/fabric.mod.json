@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "pic_visuals",
+  "version": "${version}",
+  "name": "Pic Visuals",
+  "description": "Player ESP, chams, nametags and HUD with a clean menu.",
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["ru.pic.pic_visuals.PicVisualsClient"]
+  },
+  "mixins": [
+    { "config": "pic_visuals.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
